@@ -1,0 +1,4 @@
+package.json
+.eslintrc.js
+*.fig
+gitinfo.txt
