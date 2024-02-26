@@ -1,4 +1,9 @@
 package.json
 .eslintrc.js
 *.fig
+<<<<<<< HEAD
 gitinfo.txt
+=======
+gitInfo.txt
+/node_modules
+>>>>>>> d16a00db03292ec4a4543b6f1ebf210d45d52780
