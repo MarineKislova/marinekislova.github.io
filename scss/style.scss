@@ -1,0 +1,156 @@
+@use "sass:math";
+
+@import "null/fonts";
+@import "null/root";
+@import "null/null";
+@import "null/variable";
+@import "null/mixins";
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bgr-wrapper);
+}
+.content {
+  flex: 1 1 auto;
+}
+
+$responsiveType: 2;
+
+@if ($responsiveType==2) {
+  // Чуйна
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: toRem($containerWidth);
+      margin: 0 auto;
+    }
+    @if ($containerPadding>0) {
+      @if ($maxWidthContainer>0) {
+        padding: 0 toRem(math.div($containerPadding, 2));
+      } @else {
+        @include adaptiveValue(
+          "padding-left",
+          math.div($containerPadding, 2),
+          15
+        );
+        @include adaptiveValue(
+          "padding-right",
+          math.div($containerPadding, 2),
+          15
+        );
+      }
+    }
+  }
+} @else {
+  // Брейк-поїнтами
+  [class*="__container"] {
+    margin: 0 auto;
+    @if ($maxWidthContainer>0) {
+      max-width: toRem($containerWidth);
+    } @else {
+      @if ($containerPadding>0) {
+        padding: 0 toRem(math.div($containerPadding, 2));
+      }
+    }
+    @media (max-width: $pc) {
+      max-width: toRem(970);
+    }
+    @media (max-width: $tablet) {
+      max-width: toRem(750);
+    }
+    @media (max-width: $mobile) {
+      max-width: none;
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 toRem(math.div($containerPadding, 2));
+      }
+    }
+  }
+}
+
+[class*="__container"] {
+  background-color: var(--color-bgr-container);
+  color: var(--color-text);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.open {
+  display: flex !important;
+}
+
+@import "blocks/header";
+@import "blocks/contact-popUp";
+
+.about {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+      @include adaptiv-value("width", 1200, 280, 0);
+      font-family: var(--font-family-flex);
+      font-weight: 500;
+    }
+    p {
+      font-size: 18px;
+      line-height: 2;
+      text-indent: 3%;
+      @include adaptiv-value("width", 1200, 280, 0);
+      text-align: justify;
+    }
+  }
+}
+
+.skills {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    row-gap: 30px;
+    h2 {
+      font-size: 24px;
+      text-align: center;
+      font-family: var(--font-family-flex);
+      font-weight: 500;
+    }
+  }
+
+  &__row {
+    display: flex;
+    // flex-wrap: wrap; // если будет больше items
+    // gap: 30px; // если будет больше items
+    padding-top: 30px;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    // width: 100px; // если будет больше items
+    i {
+      @include adaptiv-value("font-size", 54, 24, 0);
+    }
+  }
+}
+.fa-brands {
+}
+.fa-html5 {
+}
+.fa-xl {
+}
+.fa-css3-alt {
+}
+.fa-css3 {
+}
+.fa-js {
+}
+.fa-react {
+}

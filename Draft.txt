@@ -1,0 +1,99 @@
+<header class="header">
+          <div class="header__container">
+            <h1>Привет, я <span>Марина Кислова</span></h1>
+            <p>Начинающий веб-разработчик</p>
+            <a href="projects.html" class="btn">Посмотреть проекты</a>
+          </div>
+        </header>
+
+        <section id="about" class="about">
+          <div class="projects__container">
+            <h2>Обо мне</h2>
+            <p>
+              Я увлеченный веб-разработчик с навыками в HTML, SCSS, JavaScript,
+              React и jQuery. Разрабатываю лендинги, многостраничные сайты и
+              пет-проекты, стремлюсь развиваться и учиться новому.
+            </p>
+          </div>
+        </section>
+
+        <section id="projects" class="projects">
+          <div class="projects__container">
+            <h2>Мои проекты</h2>
+            <div class="project-grid">
+              <div class="project">
+                <img src="project1.jpg" alt="Проект 1" />
+                <h3>Проект 1</h3>
+                <p>
+                  Описание проекта. Какие задачи решал и какие технологии
+                  использовал.
+                </p>
+                <a href="#" class="btn">Посмотреть</a>
+              </div>
+              <div class="project">
+                <img src="project2.jpg" alt="Проект 2" />
+                <h3>Проект 2</h3>
+                <p>
+                  Описание проекта. Какие задачи решал и какие технологии
+                  использовал.
+                </p>
+                <a href="#" class="btn">Посмотреть</a>
+              </div>
+              <!-- Добавь больше проектов здесь -->
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="contact__container">
+            <h2>Контакты</h2>
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="Ваше имя" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Ваш email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Ваше сообщение"
+                required
+              ></textarea>
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__container">
+            <p>&copy; 2024 [Твое Имя]. Все права защищены.</p>
+            <div class="social-links">
+              <a href="#">GitHub</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </footer>
+
+
+         @include adaptiv-value("max-width", 0, 0, 0);
+      @include adaptiv-value("max-height", 0, 0, 0);
+      @include adaptiv-value("width", 0, 0, 0);
+      @include adaptiv-value("height", 0, 0, 0);
+      @include adaptiv-value("font-size", 0, 0, 0);
+      @include adaptiv-value("line-height", 0, 0, 0);
+      @include adaptiv-value("letter-spacing", 0, 0, 0);
+      @include adaptiv-value("margin-top", 0, 0, 0);
+      @include adaptiv-value("margin-bottom", 0, 0, 0);
+      @include adaptiv-value("margin-left", 0, 0, 0);
+      @include adaptiv-value("margin-right", 0, 0, 0);
+      @include adaptiv-value("padding-top", 0, 0, 0);
+      @include adaptiv-value("padding-bottom", 0, 0, 0);
+      @include adaptiv-value("padding-left", 0, 0, 0);
+      @include adaptiv-value("padding-right", 0, 0, 0);
+
+      @include adaptiv-value("font-size", 36, 24, 0);
+
+      burger max-width: 900px
+
+      #D7463B
