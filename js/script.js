@@ -1,32 +1,24 @@
 import modalWindow from "./modules/popUp.js";
+import toggleMenu from "./modules/burgerMenu.js";
+// import { closeMenu } from "./modules/burgerMenu.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-  //burger menu
+  // Initialize burger menu module
 
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".header__nav");
-  function toggleMenu() {
-    burger.classList.toggle("active");
-    nav.classList.toggle("open");
-  }
-  burger.addEventListener("click", toggleMenu);
-
-  // close menu on click nav links
-
-  const closeMenuBtn = document.querySelectorAll("[data-closeMenu]");
-  function closeMenu() {
-    nav.classList.remove("open");
-    burger.classList.remove("active");
-  }
-
-  closeMenuBtn.forEach((btn) => {
-    btn.addEventListener("click", closeMenu);
-  });
+  document.querySelector(".burger").addEventListener("click", () =>
+    toggleMenu({
+      burgerSelector: ".burger",
+      navSelector: ".header__nav",
+      btnSelector: "[data-closeMenu]",
+    })
+  );
 
   // Initialize pop-up modal window module
-  modalWindow({
-    openSelector: "[data-openPopUp]",
-    closeSelector: "[data-closePopUp]",
-    parentSelector: ".contact-popUp",
-  });
+  if (document.querySelector(".contact-popUp")) {
+    modalWindow({
+      openSelector: "[data-openPopUp]",
+      closeSelector: "[data-closePopUp]",
+      parentSelector: ".contact-popUp",
+    });
+  }
 });

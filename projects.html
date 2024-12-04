@@ -1,13 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <!-- header -->
+        <header class="header">
+          <div class="header__container">
+            <div class="header__title">
+              <a href="/index.html">Maryna Kislova</a>
+            </div>
+            <nav class="header__nav">
+              <ul>
+                <li data-closeMenu><a href="index.html#about">About me</a></li>
+                <li data-closeMenu><a href="index.html#skills">Skills</a></li>
+                <li data-closeMenu><a href="#projects">Projects</a></li>
+                <li id="contact-btn">
+                  <button
+                    data-openPopUp
+                    class="header__btn btn-dark"
+                    type="button"
+                  >
+                    Contact
+                  </button>
+                </li>
+                <li data-closeMenu id="contact-link">
+                  <a href="#contacts">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </header>
+
+        <!-- contact-popUp -->
+        <div class="contact-popUp">
+          <div class="contact-popUp__container">
+            <div class="contact-popUp__body">
+              <button
+                data-closePopUp
+                class="contact-popUp__close"
+                type="button"
+              >
+                &times;
+              </button>
+              <h3>Contact me</h3>
+
+              <div class="contact-popUp__call">
+                <a href="tel:+380955221952"
+                  ><i
+                    class="fa-solid fa-phone fa-lg"
+                    style="color: #7cee6d"
+                  ></i>
+                  +380955221952</a
+                >
+                <a href="mailto:marinekislova@gmail.com"
+                  ><i
+                    class="fa-solid fa-envelope fa-lg"
+                    style="color: #4480e1"
+                  ></i
+                  >marinekislova@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-popUp__social">
+                <a href="www.linkedin.com/in/marina-kislova-36b072225"
+                  ><i
+                    class="fa-brands fa-linkedin fa-xl"
+                    style="color: #0073b1"
+                  ></i
+                ></a>
+                <a
+                  href="https://t.me/marinekislova "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="fa-brands fa-telegram fa-xl"
+                    style="color: #74c0fc"
+                  ></i
+                ></a>
+                <a
+                  href="viber://chat?number=+380955221952"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="fa-brands fa-viber fa-xl"
+                    style="color: #b197fc"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- projects -->
+
+        <!-- end Content -->
+      </div>
+      <!-- footer -->
+      <footer id="contacts" class="footer">
+        <div class="footer__container">
+          <p>&copy; 2025 Maryna Kislova</p>
+          <div class="footer__contact">
+            <div class="footer__contact-call">
+              <a href="tel:+380955221952"
+                ><i class="fa-solid fa-phone fa-lg" style="color: #7cee6d"></i>
+                +380955221952</a
+              >
+              <a href="mailto:marinekislova@gmail.com"
+                ><i
+                  class="fa-solid fa-envelope fa-lg"
+                  style="color: #4480e1"
+                ></i
+                >marinekislova@gmail.com</a
+              >
+            </div>
+            <div class="footer__contact-social">
+              <a href="www.linkedin.com/in/marina-kislova-36b072225"
+                ><i
+                  class="fa-brands fa-linkedin fa-xl"
+                  style="color: #0073b1"
+                ></i
+              ></a>
+              <a
+                href="https://t.me/marinekislova "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  class="fa-brands fa-telegram fa-xl"
+                  style="color: #74c0fc"
+                ></i
+              ></a>
+              <a
+                href="viber://chat?number=+380955221952"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-viber fa-xl" style="color: #b197fc"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end Wrapper -->
+    </div>
+
     <script type="module" src="js/script.js"></script>
-</body>
+  </body>
 </html>

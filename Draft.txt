@@ -94,6 +94,55 @@
 
       @include adaptiv-value("font-size", 36, 24, 0);
 
-      burger max-width: 900px
+      burger 
 
-      #D7463B
+     <!-- <a
+                  href="https://wa.me/380955221952"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="fa-brands fa-whatsapp fa-xl"
+                    style="color: #63e6be"
+                  ></i
+                ></a> -->
+
+    /* projects container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 50px;
+
+width: 1241px;
+height: 434px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* project */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 0px 12px;
+gap: 19px;
+
+margin: 0 auto;
+width: 381px;
+height: 434px;
+
+background: #262C4D;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

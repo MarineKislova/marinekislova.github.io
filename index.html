@@ -19,30 +19,32 @@
         <!-- header -->
         <header class="header">
           <div class="header__container">
-            <div class="header__title"><a href="#">Maryna Kislova</a></div>
-            <nav class="header__nav">
-              <ul>
-                <li data-closeMenu><a href="#about">About me</a></li>
-                <li data-closeMenu><a href="#skills">Skills</a></li>
-                <li data-closeMenu><a href="#projects">Projects</a></li>
-                <li id="contact-btn">
-                  <button
-                    data-openPopUp
-                    class="header__btn btn-dark"
-                    type="button"
-                  >
-                    Contact
-                  </button>
-                </li>
-                <li data-closeMenu="" id="contact-link"><a href="#contacts">Contact</a></li>
-              </ul>
-              
-            </nav>
-            <div class="burger">
-              <span></span>
+            <div class="header__menu">
+              <div class="header__title"><a href="#">Maryna Kislova</a></div>
+              <nav class="header__nav">
+                <ul>
+                  <li data-closeMenu><a href="#about">About me</a></li>
+                  <li data-closeMenu><a href="#skills">Skills</a></li>
+                  <li data-closeMenu><a href="#projects">Projects</a></li>
+                  <li id="contact-btn">
+                    <button
+                      data-openPopUp
+                      class="header__btn btn-dark"
+                      type="button"
+                    >
+                      Contact
+                    </button>
+                  </li>
+                  <li data-closeMenu id="contact-link">
+                    <a href="#contacts">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="burger">
+                <span></span>
+              </div>
             </div>
           </div>
-          
         </header>
 
         <!-- contact-popUp -->
@@ -76,6 +78,12 @@
               </div>
 
               <div class="contact-popUp__social">
+                <a href="www.linkedin.com/in/marina-kislova-36b072225"
+                  ><i
+                    class="fa-brands fa-linkedin fa-xl"
+                    style="color: #0073b1"
+                  ></i
+                ></a>
                 <a
                   href="https://t.me/marinekislova "
                   target="_blank"
@@ -94,15 +102,6 @@
                     style="color: #b197fc"
                   ></i
                 ></a>
-                <a
-                  href="https://wa.me/380955221952"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i
-                    class="fa-brands fa-whatsapp fa-xl"
-                    style="color: #63e6be"
-                  ></i
-                ></a>
               </div>
             </div>
           </div>
@@ -112,19 +111,21 @@
         <div id="about" class="about">
           <div class="about__container">
             <h2>About me</h2>
-            <p>
-              Hi, I'm Maryna Kislova. I'm a beginner web developer with a
-              passion for developing modern, user-friendly websites. At the
-              moment I am finishing my studies on UDEMY courses (Complete course
-              on Javascript + React - from zero to result, author Ivan
-              Petrichenko)
-            </p>
-            <p>
-              I'm currently looking for opportunities to work on projects that
-              help me improve my skills and build my portfolio. Feel free to
-              reach out if you're interested in collaborating on a project or
-              need assistance with your web development needs.
-            </p>
+            <div class="about__row">
+              <p>
+                Hi, I'm Maryna Kislova. I'm a beginner web developer with a
+                passion for developing modern, user-friendly websites. At the
+                moment I am finishing my studies on UDEMY courses (Complete
+                course on Javascript + React - from zero to result, author Ivan
+                Petrichenko)
+              </p>
+              <p>
+                I'm currently looking for opportunities to work on projects that
+                help me improve my skills and build my portfolio. Feel free to
+                reach out if you're interested in collaborating on a project or
+                need assistance with your web development needs.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -163,7 +164,142 @@
             </div>
           </div>
         </div>
+
+        <!-- projects -->
+        <div id="projects" class="projects">
+          <div class="projects__container">
+            <h2>
+              <a href="/projects.html">View more Projects</a
+              ><i
+                class="fa-solid fa-arrow-right fa-sm"
+                style="color: #060503"
+              ></i>
+            </h2>
+            <div class="projects__row">
+              <div class="projects__item">
+                <img
+                  src="img//css-tools.png"
+                  alt="css-tools"
+                  class="projects__img"
+                />
+                <h3>CSS Tools for web designers and developers</h3>
+                <p>
+                  A CSS generator for front-end development. Simplify the
+                  process of creating complex CSS styles for developers. Usefull
+                  to speed up development with ready-to-use examples and easy
+                  code copying.
+                </p>
+                <a href="#" class="btn">Demo</a>
+                <a href="#" class="btn">GitHub</a>
+              </div>
+              <div class="projects__item">
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project 1"
+                  class="projects__img"
+                />
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  malesuada, lectus vitae laoreet tristique, massa nunc mollis
+                  nunc, ut luctus neque dolor vitae velit.
+                </p>
+                <a href="#" class="btn">Demo</a>
+                <a href="#" class="btn">GitHub</a>
+              </div>
+              <div class="projects__item">
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project 1"
+                  class="projects__img"
+                />
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  malesuada, lectus vitae laoreet tristique, massa nunc mollis
+                  nunc, ut luctus neque dolor vitae velit.
+                </p>
+                <a href="#" class="btn">Demo</a>
+                <a href="#" class="btn">GitHub</a>
+              </div>
+              <!--  <div class="projects__item">
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project 1"
+                  class="projects__img"
+                />
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  malesuada, lectus vitae laoreet tristique, massa nunc mollis
+                  nunc, ut luctus neque dolor vitae velit.
+                </p>
+                <a href="#" class="btn">Demo</a>
+                <a href="#" class="btn">GitHub</a>
+              </div>
+              <div class="projects__item">
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project 1"
+                  class="projects__img"
+                />
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  malesuada, lectus vitae laoreet tristique, massa nunc mollis
+                  nunc, ut luctus neque dolor vitae velit.
+                </p>
+                <a href="#" class="btn">Demo</a>
+                <a href="#" class="btn">GitHub</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- footer -->
+      <footer id="contacts" class="footer">
+        <div class="footer__container">
+          <p>&copy; 2025 Maryna Kislova</p>
+          <div class="footer__contact">
+            <div class="footer__contact-call">
+              <a href="tel:+380955221952"
+                ><i class="fa-solid fa-phone fa-lg" style="color: #7cee6d"></i>
+                +380955221952</a
+              >
+              <a href="mailto:marinekislova@gmail.com"
+                ><i
+                  class="fa-solid fa-envelope fa-lg"
+                  style="color: #4480e1"
+                ></i
+                >marinekislova@gmail.com</a
+              >
+            </div>
+            <div class="footer__contact-social">
+              <a href="www.linkedin.com/in/marina-kislova-36b072225"
+                ><i
+                  class="fa-brands fa-linkedin fa-xl"
+                  style="color: #0073b1"
+                ></i
+              ></a>
+              <a
+                href="https://t.me/marinekislova "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i
+                  class="fa-brands fa-telegram fa-xl"
+                  style="color: #74c0fc"
+                ></i
+              ></a>
+              <a
+                href="viber://chat?number=+380955221952"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-viber fa-xl" style="color: #b197fc"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="js/script.js"></script>

@@ -1,18 +1,23 @@
 :root {
-  --color-bgr-wrapper: rgb(186, 186, 186);
-  --color-bgr-container: rgb(247, 246, 241);
+  --color-bgr-wrapper: rgb(41, 40, 41);
+  --color-bgr-container: #959798;
+  --color-bgr-primary: rgb(240, 207, 170, 0.8);
+  --color-bgr-card: rgb(240, 207, 170, 1);
+  --color-bgr-second: rgba(73, 190, 222, 0.1);
+  --color-bgr-third: #49bede;
 
   --color-text: rgb(6, 5, 3);
 
-  --color-dark: rgba(31, 32, 36, .8);
-  --color-medium: rgba(31, 32, 36, .6);
-  --color-light:rgba(31, 32, 36, .2);
+  --color-dark: rgba(31, 32, 36, 0.8);
+  --color-medium: rgba(31, 32, 36, 0.6);
+  --color-light: rgba(31, 32, 36, 0.2);
 
   --color-btn: rgb(240, 207, 170);
   --color-border: #5e2b27;
-  --color-border: rgb(8, 122, 159);
+  --color-bordercv: rgb(0, 115, 177);
 
   --font-family: "Roboto";
   --font-family-flex: "Roboto Flex";
-  
+  --font-josefinSans: "Josefin Sans";
+  --font-bitter: "Bitter";
 }

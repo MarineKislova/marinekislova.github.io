@@ -1,0 +1,59 @@
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(62, 65, 71, 1);
+    color: #fff;
+    border-top: 1px solid var(--color-btn);
+    
+
+    @media (max-width: 525px) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    p{
+      align-self: center;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__contact-call {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    i {
+      padding-right: 10px;
+    }
+  }
+
+  &__contact-social {
+    display: flex;
+    gap: 20px;
+    // justify-content: center;
+  }
+}
+.fa-solid {
+}
+.fa-phone {
+}
+.fa-lg {
+}
+.fa-envelope {
+}
+.fa-brands {
+}
+.fa-linkedin {
+}
+.fa-xl {
+}
+.fa-telegram {
+}
+.fa-viber {
+}
