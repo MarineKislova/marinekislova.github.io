@@ -21,4 +21,25 @@ window.addEventListener("DOMContentLoaded", () => {
       parentSelector: ".contact-popUp",
     });
   }
+
+  // Filter projects by category
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".my-projects__item");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+
+      projectCards.forEach((card) => {
+        if (filter === "all" || card.getAttribute("data-category") === filter) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      // Highlight active button
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
 });

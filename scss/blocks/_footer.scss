@@ -4,6 +4,8 @@
   
   &__container {
     @include adaptiv-value("margin-top", 50, 15, 0);
+    @include adaptiv-value("padding-top", -50, 15, 0);
+    @include adaptiv-value("padding-bottom", 40, 5, 0);
     display: flex;
     justify-content: space-around;
     color: rgba(255, 245, 238, 1);
