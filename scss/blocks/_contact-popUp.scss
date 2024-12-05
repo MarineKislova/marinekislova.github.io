@@ -13,9 +13,10 @@
   &__container {
     max-width: 640px;
     margin: 70px auto;
-    background-color: #3e4147;
+    background-color: rgba(95, 95, 95, 1);
+    color: rgba(255, 245, 238, 1);
     border: 2px solid var(--color-btn);
-    color:  var(--color-btn);
+   
   }
 
   &__body {
@@ -30,7 +31,7 @@
     // overflow-y: auto;
 
     h3 {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 700;
       margin-bottom: 30px;
     }
@@ -40,11 +41,8 @@
     position: absolute;
     top: -40px;
     right: 0;
-    font-weight: 900;
     font-size: 30px;
-    color:  var(--color-btn);
-    opacity: 0.8;
-    font-weight: 700;
+    color:  rgba(255, 245, 238, 1);;
     border: none; 
     background-color: transparent;
     cursor: pointer;
@@ -56,6 +54,7 @@
     align-items: center;
     row-gap: 15px;
     margin-bottom: 30px;
+    font-size: 18px;
     i{
         padding-right: 10px;
     }
@@ -66,6 +65,7 @@
     justify-content: center;
     width: 100%;
     column-gap: 25px;
+    font-size: 18px;
   }
 }
 .fa-brands {

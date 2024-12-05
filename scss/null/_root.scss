@@ -1,12 +1,10 @@
 :root {
-  --color-bgr-wrapper: rgb(41, 40, 41);
-  --color-bgr-container: rgba(240, 207, 170, 0.9);
-  --color-bgr-primary: rgba(240, 207, 170, 0.9);
-  --color-bgr-card: Seashell;
-  --color-bgr-second: rgba(222, 223, 227, 0.8);
-  --color-bgr-third: rgba(73, 190, 222, 0.9);
+  --color-bgr-wrapper: rgba(172, 172, 172, .4);
+  --color-bgr-primary: rgb(180, 180, 180);
+  --color-bgr-second: rgba(200, 200, 200, 1);
+  --color-bgr-card: rgba(255, 245, 238, 1);
 
-  --color-text: rgb(6, 5, 3);
+  --color-text: rgb(95, 95, 95);
 
   --color-dark: rgba(31, 32, 36, 0.8);
   --color-medium: rgba(31, 32, 36, 0.6);
@@ -16,8 +14,8 @@
   --color-border: #5e2b27;
   --color-bordercv: rgb(0, 115, 177);
 
-  --font-family: "Roboto";
-  --font-family-flex: "Roboto Flex";
-  --font-josefinSans: "Josefin Sans";
-  --font-bitter: "Bitter";
+  --font-family: "Josefin Sans";
+  --font-h1: "Roboto Mono";
+  --font-h2: "Roboto Slab";
+ 
 }

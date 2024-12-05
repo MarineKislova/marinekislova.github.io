@@ -1,14 +1,16 @@
 .footer {
+  background-color: #5f5f5f;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px -4px 4px;
+  
   &__container {
+    @include adaptiv-value("margin-top", 50, 15, 0);
     display: flex;
     justify-content: space-around;
-    background-color: rgba(62, 65, 71, 1);
-    color: #fff;
-    border-top: 1px solid var(--color-btn);
+    color: rgba(255, 245, 238, 1);
     
 
     @media (max-width: 525px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 20px;
       align-items: center;
     }
@@ -39,21 +41,21 @@
     // justify-content: center;
   }
 }
-.fa-solid {
-}
-.fa-phone {
-}
-.fa-lg {
-}
-.fa-envelope {
-}
-.fa-brands {
-}
-.fa-linkedin {
-}
-.fa-xl {
-}
-.fa-telegram {
-}
-.fa-viber {
-}
+// .fa-solid {
+// }
+// .fa-phone {
+// }
+// .fa-lg {
+// }
+// .fa-envelope {
+// }
+// .fa-brands {
+// }
+// .fa-linkedin {
+// }
+// .fa-xl {
+// }
+// .fa-telegram {
+// }
+// .fa-viber {
+// }

@@ -9,17 +9,18 @@ function toggleMenu({ burgerSelector, navSelector, btnSelector }) {
   if (burger.classList.contains("active")) {
     burger.classList.add("active");
     burger.style.position = "fixed";
-    burger.style.top = 25 + "px";
-    burger.style.right = 25 + "px";
-    burger.style.bottom = 25 + "px";
+    burger.style.right = 3 + "px";
+  } else {
+    burger.style.position = "relative";
+    burger.style.right = 3 + "px";
+    nav.classList.remove("open");
+    burger.classList.remove("active");
   }
   function closeMenu() {
     burger.classList.remove("active");
     nav.classList.remove("open");
     burger.style.position = "relative";
-    burger.style.top = 0 + "px";
-    burger.style.right = 0 + "px";
-    burger.style.bottom = 0 + "px";
+    burger.style.right = 3 + "px";
   }
   closeMenuBtn.forEach((btn) => {
     btn.addEventListener("click", closeMenu);

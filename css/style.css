@@ -1,26 +1,23 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Flex:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Bitter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
 :root {
-  --color-bgr-wrapper: rgb(41, 40, 41);
-  --color-bgr-container: rgba(240, 207, 170, 0.9);
-  --color-bgr-primary: rgba(240, 207, 170, 0.9);
-  --color-bgr-card: Seashell;
-  --color-bgr-second: rgba(222, 223, 227, 0.8);
-  --color-bgr-third: rgba(73, 190, 222, 0.9);
-  --color-text: rgb(6, 5, 3);
+  --color-bgr-wrapper: rgba(172, 172, 172, .4);
+  --color-bgr-primary: rgb(180, 180, 180);
+  --color-bgr-second: rgba(200, 200, 200, 1);
+  --color-bgr-card: rgba(255, 245, 238, 1);
+  --color-text: rgb(95, 95, 95);
   --color-dark: rgba(31, 32, 36, 0.8);
   --color-medium: rgba(31, 32, 36, 0.6);
   --color-light: rgba(31, 32, 36, 0.2);
   --color-btn: rgba(240, 207, 170, 0.9);
   --color-border: #5e2b27;
   --color-bordercv: rgb(0, 115, 177);
-  --font-family: "Roboto";
-  --font-family-flex: "Roboto Flex";
-  --font-josefinSans: "Josefin Sans";
-  --font-bitter: "Bitter";
+  --font-family: "Josefin Sans";
+  --font-h1: "Roboto Mono";
+  --font-h2: "Roboto Slab";
 }
 
 * {
@@ -129,11 +126,18 @@ h6 {
 }
 
 [class*=__container] {
-  background-color: var(--color-bgr-container);
   color: var(--color-text);
-  padding-top: 50px;
-  padding-bottom: 20px;
-  color: var(--color-text);
+  padding-top: calc(15px + 35 * (100vw - 320px) / 2240);
+  padding-bottom: calc(5px + 15 * (100vw - 320px) / 2240);
+}
+[class*=__container] h2 {
+  font-size: calc(18px + 6 * (100vw - 320px) / 2240);
+  text-align: center;
+  font-family: var(--font-h2);
+  font-weight: 800;
+}
+[class*=__container] h2 i {
+  padding-left: 10px;
 }
 
 .open {
@@ -142,44 +146,47 @@ h6 {
   display: flex !important;
 }
 
+.header {
+  background-image: url(../img/pexels-negativespace-169573.jpg);
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  height: calc(250px + 350 * (100vw - 320px) / 2240);
+  padding: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.55) 1px 6px 5px;
+          box-shadow: rgba(0, 0, 0, 0.55) 1px 6px 5px;
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  gap: 10px;
+  height: 51px;
   padding: 36px 32px;
   gap: 10px;
-  height: calc(171px + 400 * (100vw - 320px) / 2240);
-  border-bottom: 1px solid var(--color-btn);
-  background-image: url(../img/developer-8829735_1920.jpg);
-  background-size: cover;
-  color: rgb(41, 40, 41);
-}
-.header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-backdrop-filter: blur(-6px) saturate(360%);
-          backdrop-filter: blur(-6px) saturate(360%);
-  background-color: rgba(240, 207, 170, 0.75);
-  border-radius: 7px;
   height: 51px;
+  -webkit-backdrop-filter: blur(3px) saturate(120%);
+          backdrop-filter: blur(3px) saturate(120%);
+  background-color: rgba(255, 245, 238, 0.41);
+  border-radius: 10px;
+  border: 1px solid rgba(209, 213, 219, 0.5);
 }
 .header__title {
   cursor: pointer;
   font-size: calc(18px + 18 * (100vw - 320px) / 2240);
   font-weight: 600;
   letter-spacing: 2px;
-  font-family: var(--font-);
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-family: "Josefin Sans";
+  font-family: var(--font-h1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__nav {
   display: -webkit-box;
@@ -216,8 +223,8 @@ h6 {
   display: none;
 }
 .header__btn {
-  background-color: rgba(41, 40, 41, 0.8);
-  color: rgb(240, 207, 170);
+  background-color: rgb(95, 95, 95);
+  color: rgb(255, 245, 238);
   font-weight: 900;
   width: 172px;
   height: 39px;
@@ -296,17 +303,21 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    height: 400px;
-    width: 100%;
+    height: 230px;
+    width: 230px;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: center;
+    right: 0px;
     z-index: 50;
     overflow-y: auto;
     overflow: hidden;
     padding: 50px 40px;
-    background-color: var(--color-bgr-primary);
+    -webkit-backdrop-filter: blur(3px) saturate(120%);
+            backdrop-filter: blur(3px) saturate(120%);
+    background-color: rgba(255, 245, 238, 0.9);
+    border-radius: 10px;
+    border: 1px solid rgb(209, 213, 219);
     -webkit-animation: burgerAnimation 1s;
             animation: burgerAnimation 1s;
     row-gap: 30px;
@@ -320,7 +331,6 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 20px;
-    color: #462a0b;
     font-size: 20px;
   }
   .header__nav #contact-btn {
@@ -361,9 +371,9 @@ h6 {
 .contact-popUp__container {
   max-width: 640px;
   margin: 70px auto;
-  background-color: #3e4147;
+  background-color: rgb(95, 95, 95);
+  color: rgb(255, 245, 238);
   border: 2px solid var(--color-btn);
-  color: var(--color-btn);
 }
 .contact-popUp__body {
   position: relative;
@@ -383,7 +393,7 @@ h6 {
   max-height: 80vh;
 }
 .contact-popUp__body h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -391,11 +401,8 @@ h6 {
   position: absolute;
   top: -40px;
   right: 0;
-  font-weight: 900;
   font-size: 30px;
-  color: var(--color-btn);
-  opacity: 0.8;
-  font-weight: 700;
+  color: rgb(255, 245, 238);
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -413,6 +420,7 @@ h6 {
           align-items: center;
   row-gap: 15px;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 .contact-popUp__call i {
   padding-right: 10px;
@@ -428,24 +436,29 @@ h6 {
   -webkit-column-gap: 25px;
      -moz-column-gap: 25px;
           column-gap: 25px;
+  font-size: 18px;
 }
 
+.footer {
+  background-color: #5f5f5f;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px -4px 4px;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px -4px 4px;
+}
 .footer__container {
+  margin-top: calc(15px + 35 * (100vw - 320px) / 2240);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: rgb(62, 65, 71);
-  color: #fff;
-  border-top: 1px solid var(--color-btn);
+  color: rgb(255, 245, 238);
 }
 @media (max-width: 525px) {
   .footer__container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -497,32 +510,12 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.about h2 {
-  font-size: calc(18px + 4 * (100vw - 320px) / 2240);
-  text-align: center;
-  font-family: var(--font-family-flex);
-  font-weight: 500;
-  padding-bottom: calc(15px + 15 * (100vw - 320px) / 2240);
-}
-.about__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Josefin Sans";
+  font-weight: 600;
   width: calc(280px + 920 * (100vw - 320px) / 2240);
-  -webkit-box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.4), inset 5px 7px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.4), inset 5px 7px 10px rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  border-radius: 10px;
+  padding-top: calc(30px + 120 * (100vw - 320px) / 2240);
   row-gap: 20px;
-  background-color: var(--color-bgr-card);
 }
-.about__row p {
+.about__container p {
   font-size: calc(16px + 6 * (100vw - 320px) / 2240);
   line-height: 2;
   text-indent: 3%;
@@ -541,13 +534,6 @@ h6 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   row-gap: 30px;
-}
-.skills__container h2 {
-  font-size: calc(18px + 4 * (100vw - 320px) / 2240);
-  text-align: center;
-  font-family: var(--font-family-flex);
-  font-weight: 500;
-  padding-bottom: calc(15px + 15 * (100vw - 320px) / 2240);
 }
 .skills__row {
   display: -webkit-box;
@@ -584,15 +570,6 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-}
-.projects__container h2 {
-  font-size: 24px;
-  text-align: center;
-  font-family: var(--font-family-flex);
-  font-weight: 500;
-}
-.projects__container i {
-  padding-left: 10px;
 }
 .projects__row {
   display: grid;
