@@ -150,6 +150,7 @@ $responsiveType: 2;
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    
 
     h3,
     a {
@@ -166,9 +167,7 @@ $responsiveType: 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    // @include adaptiv-value("width", 1000, 280, 0);
-    width: 1000px;
-    margin: 0 auto;
+    @include adaptiv-value("width", 1000, 280, 0);
   }
 
   &__item {
