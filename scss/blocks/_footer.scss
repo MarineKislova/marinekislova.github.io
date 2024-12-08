@@ -1,15 +1,14 @@
 .footer {
   background-color: #5f5f5f;
   box-shadow: rgba(0, 0, 0, 0.7) 0px -4px 4px;
-  
+
   &__container {
     @include adaptiv-value("margin-top", 50, 15, 0);
-    @include adaptiv-value("padding-top", -50, 15, 0);
-    @include adaptiv-value("padding-bottom", 40, 5, 0);
+    @include adaptiv-value("padding-top", 50, 25, 0);
+    @include adaptiv-value("padding-bottom", 50, 25, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: rgba(255, 245, 238, 1);
-    
 
     @media (max-width: 525px) {
       flex-direction: column-reverse;
@@ -17,7 +16,7 @@
       align-items: center;
     }
 
-    p{
+    p {
       align-self: center;
     }
   }
@@ -35,12 +34,20 @@
     i {
       padding-right: 10px;
     }
+
+    @media (max-width: 525px) {
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__contact-social {
     display: flex;
     gap: 20px;
-    // justify-content: center;
+
+    @media (max-width: 525px) {
+      justify-content: center;
+    }
   }
 }
 // .fa-solid {

@@ -52,9 +52,8 @@
     gap: 15px;
     text-align: center;
     align-items: center;
-    background-color: #f3f1e4;
-    background-color: rgba(200, 208, 238, 1);
-    background-color: rgba(74, 122, 155, 0.8);
+    background-color: var(--color-card);
+   
     color: rgba(240, 207, 170, 0.9);
     border-radius: 20px;
     box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.31);
@@ -62,7 +61,7 @@
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
 
     &:hover {
-        background-color: rgba(74, 122, 155, 1);
+        background-color: var( --color-card-hover);
       box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.51);
     }
   }
