@@ -1,6 +1,9 @@
 import modalWindow from "./modules/popUp.js";
 import toggleMenu from "./modules/burgerMenu.js";
 // import { closeMenu } from "./modules/burgerMenu.js";
+import card from "./modules/data.js";
+import createCards from "./modules/cards.js";
+import{cards} from "./modules/cards.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   // Initialize burger menu module
@@ -24,12 +27,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Filter projects by category
   const filterButtons = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".my-projects__item");
+  
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.getAttribute("data-filter");
 
-      projectCards.forEach((card) => {
+      cards.querySelectorAll(".my-projects__item").forEach((card) => {
         if (filter === "all" || card.getAttribute("data-category") === filter) {
           card.style.display = "flex";
         } else {
@@ -42,4 +45,10 @@ window.addEventListener("DOMContentLoaded", () => {
       button.classList.add("active");
     });
   });
+
+  // project cards
+
+  if (document.querySelector(".my-projects__container")) {
+    createCards(card);
+  }
 });

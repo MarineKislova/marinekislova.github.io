@@ -1,148 +1,196 @@
-<header class="header">
-          <div class="header__container">
-            <h1>Привет, я <span>Марина Кислова</span></h1>
-            <p>Начинающий веб-разработчик</p>
-            <a href="projects.html" class="btn">Посмотреть проекты</a>
-          </div>
-        </header>
+<!-- <div class="my-projects__items">
+              <div
+                id="interia"
+                class="my-projects__item"
+                data-category="landing"
+              >
+                <h3>Landing page <br />Design studio INTERIA</h3>
+                <img
+                  src="img/interia.png"
+                  alt="Interia"
+                  class="my-projects__image"
+                />
 
-        <section id="about" class="about">
-          <div class="projects__container">
-            <h2>Обо мне</h2>
-            <p>
-              Я увлеченный веб-разработчик с навыками в HTML, SCSS, JavaScript,
-              React и jQuery. Разрабатываю лендинги, многостраничные сайты и
-              пет-проекты, стремлюсь развиваться и учиться новому.
-            </p>
-          </div>
-        </section>
+                <div class="my-projects__description">
+                  A single-page landing website developed based on a design
+                  studio mockup.
+                  <ul class="my-projects__description">
+                    This site is optimized for all devices, including mobile
+                    phones, tablets, and desktops.
+                  </ul>
+                  <ul class="my-projects__description">
+                    Convenient navigation for mobile devices.
+                  </ul>
+                  <ul class="my-projects__description">
+                    Integrated SwiperJS library for interactive slides and swipe
+                    functionality on mobile devices.
+                  </ul>
+                </div>
 
-        <section id="projects" class="projects">
-          <div class="projects__container">
-            <h2>Мои проекты</h2>
-            <div class="project-grid">
-              <div class="project">
-                <img src="project1.jpg" alt="Проект 1" />
-                <h3>Проект 1</h3>
-                <p>
-                  Описание проекта. Какие задачи решал и какие технологии
-                  использовал.
-                </p>
-                <a href="#" class="btn">Посмотреть</a>
+                <ul class="my-projects__technologies">
+                  <p>Technologies Used:</p>
+                  <li>HTML, SCSS, JavaScript</li>
+                  <li>SwiperJS for slider functionality</li>
+                  <li>Flexbox and Grid for responsive layout</li>
+                </ul>
+                <div class="my-projects__links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    class="my-projects__link"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/username/project-repo"
+                    target="_blank"
+                    class="my-projects__link"
+                    >GitHub</a
+                  >
+                </div>
               </div>
-              <div class="project">
-                <img src="project2.jpg" alt="Проект 2" />
-                <h3>Проект 2</h3>
-                <p>
-                  Описание проекта. Какие задачи решал и какие технологии
-                  использовал.
-                </p>
-                <a href="#" class="btn">Посмотреть</a>
+              <div class="my-projects__item" data-category="landing">
+                <h3>Project name</h3>
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project screenshot"
+                  class="my-projects__image"
+                />
+
+                <p class="my-projects__description">Description</p>
+                <ul class="my-projects__technologies">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="my-projects__links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    class="my-projects__link"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/username/project-repo"
+                    target="_blank"
+                    class="my-projects__link"
+                    >GitHub</a
+                  >
+                </div>
               </div>
-              <!-- Добавь больше проектов здесь -->
-            </div>
-          </div>
-        </section>
+              <div class="my-projects__item" data-category="landing">
+                <h3>Project name</h3>
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project screenshot"
+                  class="my-projects__image"
+                />
 
-        <section id="contact" class="contact">
-          <div class="contact__container">
-            <h2>Контакты</h2>
-            <form action="#" method="POST">
-              <input type="text" name="name" placeholder="Ваше имя" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Ваш email"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Ваше сообщение"
-                required
-              ></textarea>
-              <button type="submit" class="btn">Отправить</button>
-            </form>
-          </div>
-        </section>
+                <p class="my-projects__description">Description</p>
+                <ul class="my-projects__technologies">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="my-projects__links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    class="my-projects__link"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/username/project-repo"
+                    target="_blank"
+                    class="my-projects__link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="my-projects__item" data-category="multi-page">
+                <h3>Project name</h3>
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project screenshot"
+                  class="my-projects__image"
+                />
 
-        <footer class="footer">
-          <div class="footer__container">
-            <p>&copy; 2024 [Твое Имя]. Все права защищены.</p>
-            <div class="social-links">
-              <a href="#">GitHub</a>
-              <a href="#">LinkedIn</a>
-            </div>
-          </div>
-        </footer>
+                <p class="my-projects__description">Description</p>
+                <ul class="my-projects__technologies">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="my-projects__links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    class="my-projects__link"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/username/project-repo"
+                    target="_blank"
+                    class="my-projects__link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="my-projects__item" data-category="projects">
+                <h3>Project name</h3>
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project screenshot"
+                  class="my-projects__image"
+                />
 
+                <p class="my-projects__description">Description</p>
+                <ul class="my-projects__technologies">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="my-projects__links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    class="my-projects__link"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/username/project-repo"
+                    target="_blank"
+                    class="my-projects__link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="my-projects__item" data-category="app">
+                <h3>Project name</h3>
+                <img
+                  src="img/retro-film-7698942_640.jpg"
+                  alt="Project screenshot"
+                  class="my-projects__image"
+                />
 
-         @include adaptiv-value("max-width", 0, 0, 0);
-      @include adaptiv-value("max-height", 0, 0, 0);
-      @include adaptiv-value("width", 0, 0, 0);
-      @include adaptiv-value("height", 0, 0, 0);
-      @include adaptiv-value("font-size", 0, 0, 0);
-      @include adaptiv-value("line-height", 0, 0, 0);
-      @include adaptiv-value("letter-spacing", 0, 0, 0);
-      @include adaptiv-value("margin-top", 0, 0, 0);
-      @include adaptiv-value("margin-bottom", 0, 0, 0);
-      @include adaptiv-value("margin-left", 0, 0, 0);
-      @include adaptiv-value("margin-right", 0, 0, 0);
-      @include adaptiv-value("padding-top", 0, 0, 0);
-      @include adaptiv-value("padding-bottom", 0, 0, 0);
-      @include adaptiv-value("padding-left", 0, 0, 0);
-      @include adaptiv-value("padding-right", 0, 0, 0);
-
-      @include adaptiv-value("font-size", 36, 24, 0);
-
-      burger 
-
-     <!-- <a
-                  href="https://wa.me/380955221952"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i
-                    class="fa-brands fa-whatsapp fa-xl"
-                    style="color: #63e6be"
-                  ></i
-                ></a> -->
-
-    /* projects container */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-padding: 0px;
-gap: 50px;
-
-width: 1241px;
-height: 434px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* project */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px 0px 12px;
-gap: 19px;
-
-margin: 0 auto;
-width: 381px;
-height: 434px;
-
-background: #262C4D;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+                <p class="my-projects__description">Description</p>
+                <ul class="my-projects__technologies">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="my-projects__links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    class="my-projects__link"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/username/project-repo"
+                    target="_blank"
+                    class="my-projects__link"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div> -->

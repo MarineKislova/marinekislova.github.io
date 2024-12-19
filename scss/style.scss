@@ -189,6 +189,8 @@ $responsiveType: 2;
       font-size: 18px;
     }
 
+   
+
     &:hover {
       background-color: var( --color-card-hover);
     box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.51);
@@ -207,3 +209,100 @@ $responsiveType: 2;
 }
 .btn {
 }
+
+.modal-projects {
+  display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+
+  &__content {
+    background-color: var(--color-card-hover);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    @include adaptiv-value("font-size", 24, 16, 0)
+  }
+
+  &__close {
+  
+    align-self: end;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+
+  &__image {
+    @include adaptiv-value("width", 700, 280, 0);
+    // max-width: 280px;
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 2px;
+  }
+
+  &__technologies {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color:#c88b7c;
+
+    li {
+      margin: 5px 0;
+  }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #6babef;
+
+    &:hover {
+      color: #8050ea;
+      font-weight: bold;
+    }
+  }
+
+  &__code-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #6babef;
+
+    &:hover {
+      color: #8050ea;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+
+
+
