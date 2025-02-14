@@ -51,4 +51,10 @@ window.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector(".my-projects__container")) {
     createCards(card);
   }
+
+  document.querySelectorAll(".project__card").forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
+    });
+  });
 });
