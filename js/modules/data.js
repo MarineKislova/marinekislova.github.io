@@ -63,6 +63,20 @@ const card = [
 
   {
     id: 5,
+    title: "Masters Hub",
+    description: "",
+    image: "img/Masters-Hub.png",
+    alt: "Masters-Hub",
+    category: "landing",
+    fullDescription: "",
+    // technologies: ["HTML", "SCSS", "JavaScript", "SwiperJS"],
+    technologies: "HTML, SCSS, JavaScript, SwiperJS",
+    link: "https://marinekislova.github.io/Masters-Hub-Education/",
+    codeLink: "https://github.com/MarineKislova/Masters-Hub-Education",
+  },
+
+  {
+    id: 6,
     title: "Interia",
     description: "",
     image: "img/retro-film-7698942_640.jpg",
@@ -74,6 +88,7 @@ const card = [
     link: "",
     codeLink: "",
   },
+  
 ];
 
 export default card;
