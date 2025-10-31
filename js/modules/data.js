@@ -39,7 +39,7 @@ const card = [
     alt: "",
     category: "multi-page",
     fullDescription:
-      "Developed a multi-page responsive website with a modern UI/UX design. Key Features: responsive layout; custom sliders in pure JavaScript; burger menu; tab and anchor link navigation; cross-tab navigation between pages. The project is optimized for fast loading speeds and cross-browser compatibility.",
+      "Developed a multi-page responsive website with a modern UI/UX design. Key Features: responsive layout; custom sliders in pure JavaScript; burger menu; tab and anchor link navigation; cross-tab navigation between pages.",
     // technologies: ["HTML", "SCSS", "JavaScript", "SwiperJS"],
     technologies: "HTML, SCSS, JavaScript",
     link: "https://marinekislova.github.io/Client-first/",
