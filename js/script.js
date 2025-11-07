@@ -63,15 +63,10 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = currentYear;
 
   // count visitors
-  const url = encodeURIComponent(
-    "https://api.countapi.dev/hit/marinekislova_github_io/visits"
-  );
-
-  fetch(`https://api.allorigins.win/get?url=${url}`)
-    .then((res) => res.json())
-    .then((data) => {
-      const json = JSON.parse(data.contents);
-      console.log("Visits:", json.value);
-    })
-    .catch((err) => console.error("Error:", err));
+  fetch("https://hits.sh/marinekislova.github.io.json")
+  .then(res => res.json())
+  .then(data => {
+    console.log("Visits:", data.hits);
+  })
+  .catch(err => console.error("Error:", err));
 });
