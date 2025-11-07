@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = currentYear;
 
   // count visitors
-  fetch('https://api.countapi.xyz/hit/username.github.io/visits')
+  fetch('https://api.countapi.xyz/hit/marinekislova.github.io/visits')
   .then(r => r.json())
   .then(data => {
     console.log(data.value);
