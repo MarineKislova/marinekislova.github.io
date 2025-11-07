@@ -3,7 +3,7 @@ import toggleMenu from "./modules/burgerMenu.js";
 // import { closeMenu } from "./modules/burgerMenu.js";
 import card from "./modules/data.js";
 import createCards from "./modules/cards.js";
-import{cards} from "./modules/cards.js";
+import { cards } from "./modules/cards.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   // Initialize burger menu module
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Filter projects by category
   const filterButtons = document.querySelectorAll(".filter-btn");
-  
+
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.getAttribute("data-filter");
@@ -63,10 +63,15 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = currentYear;
 
   // count visitors
-  fetch('https://api.countapi.dev/hit/marinekislova_github_io/visits')
-  .then(r => r.json())
-  .then(data => {
-    console.log("Visits:", data.value);
-  })
-  .catch(err => console.error("Error:", err));
+  const url = encodeURIComponent(
+    "https://api.countapi.dev/hit/marinekislova_github_io/visits"
+  );
+
+  fetch(`https://api.allorigins.win/get?url=${url}`)
+    .then((res) => res.json())
+    .then((data) => {
+      const json = JSON.parse(data.contents);
+      console.log("Visits:", json.value);
+    })
+    .catch((err) => console.error("Error:", err));
 });
