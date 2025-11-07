@@ -63,10 +63,34 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = currentYear;
 
   // count visitors
-  fetch("https://hits.sh/marinekislova.github.io.json")
-  .then(res => res.json())
-  .then(data => {
-    console.log("Visits:", data.hits);
-  })
-  .catch(err => console.error("Error:", err));
+  const gistId = "b59ca16ceb4e7b4b792e1915c6eccff6";
+  const filename = "counter.json";
+
+  // 1. Получаем текущий счетчик
+  fetch(`https://api.github.com/gists/${gistId}`)
+    .then((r) => r.json())
+    .then((gist) => {
+      const content = JSON.parse(gist.files[filename].content);
+      content.visits += 1;
+
+      console.log("Visits:", content.visits);
+
+      // 2. Отправляем обновленные данные обратно в gist
+      return fetch(`https://api.github.com/gists/${gistId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          // Тебе нужно вставить свой GitHub token!
+          Authorization: "token ВСТАВЬ_СВОЙ_ТОКЕН",
+        },
+        body: JSON.stringify({
+          files: {
+            [filename]: {
+              content: JSON.stringify(content, null, 2),
+            },
+          },
+        }),
+      });
+    })
+    .catch((err) => console.error("Error:", err));
 });
