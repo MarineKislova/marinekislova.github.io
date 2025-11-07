@@ -57,4 +57,15 @@ window.addEventListener("DOMContentLoaded", () => {
       card.classList.toggle("flipped");
     });
   });
+
+  //year in footer
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
+
+  // count visitors
+  fetch('https://api.countapi.xyz/hit/username.github.io/visits')
+  .then(r => r.json())
+  .then(data => {
+    console.log(data.value);
+  });
 });
