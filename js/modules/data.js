@@ -36,7 +36,7 @@ const card = [
     title: "Client-first",
     description: "Multi-Page Responsive Website",
     image: "img/client-first.png",
-    alt: "",
+    alt: "Client-first",
     category: "multi-page",
     fullDescription:
       "Developed a multi-page responsive website with a modern UI/UX design. Key Features: responsive layout; custom sliders in pure JavaScript; burger menu; tab and anchor link navigation; cross-tab navigation between pages.",
@@ -50,7 +50,7 @@ const card = [
     id: 4,
     title: "CSS Tools",
     description: "CSS Generator – A Tool for Quick CSS Style Creation",
-    image: "img/css-tools.png",
+    image: "img/cssgenerator.png",
     alt: "css-tools",
     category: "projects",
     fullDescription:
@@ -64,11 +64,11 @@ const card = [
   {
     id: 5,
     title: "Masters Hub",
-    description: "",
+    description: "A single-page landing website",
     image: "img/Masters-Hub.png",
     alt: "Masters-Hub",
     category: "landing",
-    fullDescription: "",
+    fullDescription: "Adaptive landing page with interactive sliders on SwiperJS, accordions, burger menu, tab navigation. This site is optimized for all devices, including mobile phones, tablets, and desktops.",
     // technologies: ["HTML", "SCSS", "JavaScript", "SwiperJS"],
     technologies: "HTML, SCSS, JavaScript, SwiperJS",
     link: "https://marinekislova.github.io/Masters-Hub-Education/",
